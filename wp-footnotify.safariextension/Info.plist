@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>Author</key>
-	<string>Hans Petter Eikemo</string>
+	<string>bsdf</string>
 	<key>Builder Version</key>
-	<string>7534.48.3</string>
+	<string>6534.50</string>
 	<key>CFBundleDisplayName</key>
-	<string>Footnotify</string>
+	<string>wp-footnotify</string>
 	<key>CFBundleIdentifier</key>
-	<string>co.ideon.footnotify</string>
+	<string>com.bsdf.wp-footnotify</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.6.1</string>
+	<string>0.0.1</string>
 	<key>CFBundleVersion</key>
-	<string>0.6.1</string>
+	<string>0.0.1</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -40,22 +40,24 @@
 		</array>
 	</dict>
 	<key>Description</key>
-	<string>Displays footnotes in HTML pages in a popover.</string>
+	<string>displays wp footnotes in a popup</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
 	<dict>
 		<key>Website Access</key>
 		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>*.wikipedia.org</string>
+			</array>
 			<key>Include Secure Pages</key>
 			<true/>
 			<key>Level</key>
 			<string>Some</string>
 		</dict>
 	</dict>
-	<key>Update Manifest URL</key>
-	<string>http://static.ideon.co/safariextensions/footnotify.plist</string>
 	<key>Website</key>
-	<string>http://openideas.ideon.co</string>
+	<string>http://github.com/bsdf/wp-footnotify</string>
 </dict>
 </plist>
