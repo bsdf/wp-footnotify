@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Hans Petter Eikemo</string>
+	<key>Builder Version</key>
+	<string>7534.48.3</string>
+	<key>CFBundleDisplayName</key>
+	<string>Footnotify</string>
+	<key>CFBundleIdentifier</key>
+	<string>co.ideon.footnotify</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.6.1</string>
+	<key>CFBundleVersion</key>
+	<string>0.6.1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Global Page</key>
+		<string>global.html</string>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>injection.js</string>
+			</array>
+			<key>Start</key>
+			<array>
+				<string>jquery-1.6.2.min.js</string>
+			</array>
+		</dict>
+		<key>Stylesheets</key>
+		<array>
+			<string>footnotify.css</string>
+		</array>
+	</dict>
+	<key>Description</key>
+	<string>Displays footnotes in HTML pages in a popover.</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://static.ideon.co/safariextensions/footnotify.plist</string>
+	<key>Website</key>
+	<string>http://openideas.ideon.co</string>
+</dict>
+</plist>

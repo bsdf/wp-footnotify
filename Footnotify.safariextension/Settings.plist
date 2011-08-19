@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Key</key>
+		<string>blockPositioning</string>
+		<key>Title</key>
+		<string>Scaling mode</string>
+		<key>Titles</key>
+		<array>
+			<string>Relative to content</string>
+			<string>Relative to window</string>
+		</array>
+		<key>Type</key>
+		<string>RadioButtons</string>
+		<key>Values</key>
+		<array>
+			<true/>
+			<false/>
+		</array>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Window positioning:</string>
+		<key>Type</key>
+		<string>Group</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<real>540</real>
+		<key>Key</key>
+		<string>maxWidth</string>
+		<key>MaximumValue</key>
+		<real>800</real>
+		<key>MinimumValue</key>
+		<real>150</real>
+		<key>Title</key>
+		<string>Max width</string>
+		<key>Type</key>
+		<string>Slider</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Key</key>
+		<string>activePositioning</string>
+		<key>Title</key>
+		<string>Active positioning on scroll and window resize.</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<false/>
+		<key>Key</key>
+		<string>helpOnce</string>
+		<key>Title</key>
+		<string>Show help.</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+</array>
+</plist>

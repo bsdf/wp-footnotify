@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+
+<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+<script type="text/javascript">
+    
+  var footnotify_settings = {
+    maxWidth:            safari.extension.settings.maxWidth,
+    helpOnce:            safari.extension.settings.helpOnce,
+    activePositioning:    safari.extension.settings.activePositioning,
+    blockPositioning:   safari.extension.settings.blockPositioning
+  };
+
+  var settingChangedHandler = function(event) {
+    footnotify_settings[event.key] = event.newValue;
+  };
+  
+  safari.extension.settings.addEventListener("change", settingChangedHandler, false);
+
+  
+  
+  
+  var messageHandler = function(event) {
+    // console.log("global",event)    
+            
+    if (event.name == 'footnotifyInit') {
+      event.target.page.dispatchMessage("settings",footnotify_settings);
+      event.target.page.dispatchMessage("init");
+    }
+    if (event.name == 'requestSettings') {
+      event.target.page.dispatchMessage("settings",footnotify_settings);
+    }
+        
+  };
+  safari.application.addEventListener("message",messageHandler,false);
+
+
+</script>
+</head>
+<body>
+</body>
+</html>
